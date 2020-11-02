@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+	<style>
+		html, body {
+		  height: 100%;
+		  width: 100%;
+		  overflow: hidden;
+		  padding: 0;
+		  margin: 0;
+		  box-sizing: border-box;
+		  font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
+		}
+		
+		* {
+			scrollbar-color:rgba(0,0,0,.2) hsla(0,0%,100%,.1);
+			scrollbar-width:thin
+		}
+		.dark * {
+			scrollbar-color:hsla(0,0%,100%,.16) transparent
+		}
+		/* width */
+		::-webkit-scrollbar {
+		
+		  width: 5px !important;
+		  height: 6px!important;
+		}
+
+		/* Track */
+		::-webkit-scrollbar-track {
+		  background: #76899a00;
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		  background: #5d53634f;
+		}
+		
+		
+	</style>
+  </head>
+  <body class="">
+    <noscript>
+		<strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
